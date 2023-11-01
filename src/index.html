@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<title>Patronite task</title>
+		<link rel="stylesheet" href="./scss/styles.scss" />
+	</head>
+	<body>
+		<header id="header">DogAPI</header>
+		<div class="loader-wrapper"><div id="loader" class="loader"></div></div>
+		<div class="content">
+			<div class="breed-list" id="breed-list"></div>
+			<div class="close-area" id="close-area"></div>
+			<div class="modal" id="modal" style="display: none">
+				<div class="selected-breed-text" id="selected-breed-text"></div>
+				<img id="breed-image" alt="dog image" />
+				<div class="close-tag" id="close-tag">X</div>
+				<i class="fa fa-heart-o" id="favorite-button"></i>
+			</div>
+		</div>
+		<div class="favorite-breeds" id="favorite-breeds"></div>
+		<div class="list-button" id="list-button">
+			<i class="fa fa-paw"></i>
+		</div>
+		<footer id="footer">Zadanie Patronite 2023</footer>
+		<script type="module">
+			import { init } from './js/main.js';
+			init();
+		</script>
+	</body>
+</html>
